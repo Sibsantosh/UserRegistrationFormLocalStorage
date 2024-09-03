@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="details">
+            <h2 id="registratonFormHeader">User Registration</h2>
+            <hr style="margin-top: 10px;">
+
+            <form id="registrationForm">
+
+                <input type="hidden" id="count" name="count"  > 
+                <label for="name" >Full Name <font color = red> *</font></label>
+                <input type="text" id="name" name="name"   >
+
+                <label for="email">Email Address<font color = red> *</font></label>
+                <input type="email" id="email" name="email"    >
+
+                <label for="password">Password<font color = red> *</font></label>
+                <input type="password" id="password" name="password"   >
+
+
+                <label for="phone">Phone Number<font color = red> *</font></label>
+                <input type="tel" id="phone" name="phone"   >
+
+                <label for="date">Date Of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth"   >
+
+                <label for="gender">Gender</label>
+                <select  id="gender" name="gender" placeholder="Gender"  >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    
+                </select>
+
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation"   >
+
+                <label for="department">Department</label>
+                <input type="text" id="department"  name="department"  >
+
+                <button type="submit" id="submitButton" onclick="registerUser()"> Register User</button>
+            </form>
+        </div>
+
+        <div class="list">              
+        </div>
+    </div>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>

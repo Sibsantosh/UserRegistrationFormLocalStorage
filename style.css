@@ -1,0 +1,235 @@
+/* Reset padding and margin for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    background: gainsboro;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the content */
+.content {
+    display: flex; 
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Styling for details and list sections */
+.details, .list {
+    background: white;
+    
+    border: 1px solid #000;
+    border-radius: 10px;
+    
+    padding: 10px;
+}
+
+/* Default layout for larger screens */
+.details {
+    width: 30%;
+}
+
+.list {
+    width: 65%;
+    gap: 20px;
+    
+}
+
+/* Form styling */
+form {
+    margin-top: 10px;
+    
+}
+
+/* Media query for tablets and mobile devices */
+
+/* Styling for the input box */
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    
+    margin-bottom: 10px;
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="date"] {
+    padding: 5px;
+    width: 100%;
+    
+    margin-bottom: 10px;
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="tel"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+select {
+    padding: 10px;
+    width: 100%;
+    
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFF6;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+form>button{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    
+    color: #fff;
+    background: #143558;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+label{
+    color: #143558b4;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+/* Change border color on focus 
+    border-color: #007BFF;
+    outline: none;
+}*/
+
+.card {
+    background-color: #FFFFF6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    margin-top: 10px;
+    
+}
+.card>.personDetails{
+   
+    flex: 1;
+}
+.card>.personJob{
+     
+    flex: 1;
+}
+
+
+
+
+button {
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+    .details, .list {
+        width: 100%;
+    }
+    .card>.personDetails{
+        font-size:small;
+        flex: 1;
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .card{
+        max-height: 200px;
+    }
+    .card>.personJob{
+     
+        display: none;
+    }
+    .card>.personDetails{
+        font-size:smaller;
+        flex: 1;
+    }
+
+}
+
+
+
